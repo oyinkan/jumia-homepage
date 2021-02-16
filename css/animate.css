@@ -1,0 +1,49 @@
+.fadeUp,
+.zoomInUp,
+.zoomIn,
+.fadeRight {
+    opacity: 0;
+    will-change: transform opacity;
+}
+.fadeUp {
+    opacity: 0;
+    transform: translate3d(0,100px,0);
+    transition: transform 2s .25s ease,
+                opacity .3s .25s ease;
+    will-change: transform, opacity;
+}
+.zoomInUp {
+    opacity: 0;
+    transform: translate3d(0,100px,0) scale(.6);
+    transition: transform 1s .25s ease,
+                opacity .3s .25s ease;
+    will-change: transform, opacity;
+}
+.zoomIn {
+    transform: scale(.6);
+    transition: transform 2.5s .25s ease,
+                opacity .3s .25s ease;
+}
+.flipLeft {
+    transform: perspective(2500px) rotateY(-100deg);
+    transition: transform 2.5s 0.25s ease;
+    will-change: transform;
+} 
+.fadeRight {
+    transform: translate3d(-100px,0,0);
+    transition: transform 1.5s .3s ease,
+                opacity .3s .25s ease;
+}
+.flipDown {
+    transform: perspective(2500px) rotateX(100deg);
+    transition: transform 1.5s ease;
+    will-change: transform;
+}
+  
+
+
+
+.show-on-scroll.is-visible {
+    opacity: 1;
+    transform: rotateZ(0);
+}

@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+    .main-wrapper,
+    .games-wrapper img {
+        width: 100%;
+    }
+    .shopping-app {
+        padding-left: 0;
+    }
+    .pl-100,
+    .pl-50,
+    .pl-90 {
+        padding-left: 0;
+    }
+    .image-wrapper {
+        text-align: center;
+    }
+    .navbar-expand-md>.container, .navbar-expand-md>.container-fluid, .navbar-expand-md>.container-lg, .navbar-expand-md>.container-md, .navbar-expand-md>.container-sm, .navbar-expand-md>.container-xl {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .navbar .navbar-nav.ml-auto {
+        flex-direction: row;
+        margin-top: 1.5rem;
+    }
+    .navbar .navbar-nav.ml-auto .nav-link {
+        margin-right: 1.5rem;
+    }
+    .navbar .hamburger { 
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown:hover .dropdown-menu { 
+        display: block; 
+    }
+}	
